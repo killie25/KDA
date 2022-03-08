@@ -1,0 +1,556 @@
+/*Reset CSS*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+
+}
+html {
+    font-family:"lato", sans-serif;
+    scroll-behavior: smooth;
+}
+/*
+1. tu ngoai vao trong
+2.tu tren xuong duoi
+3.tong quan den chi tiet
+*/
+
+/*
+1.vị trí
+2.kich thuoc (wwidth,height)
+3.mau sac
+4.kieu dang 
+*/
+/*class chung*/
+.clear{
+    clear: both;
+}
+.text-white {
+    color: white !important;
+}
+.text-center{
+    text-align: center !important;
+}
+.row{
+    margin-left: -8px;
+    
+}
+.mt-8{
+    margin-top: 8px !important;
+}
+.mt-16{
+    margin-top: 16px !important;
+}
+.col{
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+
+}
+.col-full{
+    width: 100%;
+}
+.col-half{
+    width: 50%;
+}
+
+
+.col-third{
+    width: 33.333%;
+}
+.col-five{
+    width: 20%;
+}
+.pull-right{
+    float: right !important;
+    margin-right: 8px;
+}
+.btn {
+    color: #fff;
+    background-color: #000;
+    text-decoration: none;
+    display: inline-block;
+    border: none;
+    text-align: center;
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+
+#Header{
+    height: 46px;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    width: 100%;
+    
+}
+#nav{
+    display: inline-block;
+}
+#nav, .subnav{
+    list-style: none;
+}
+#nav > li{
+    display: inline-block;
+}
+
+#nav li {
+   
+    position: relative;
+
+}
+#nav > li > a{
+    color:#fff;
+    text-transform: uppercase;
+}
+#nav li a{
+    color: white;
+    text-decoration: none;
+    line-height: 46px ;
+    padding: 0 24px;
+    display:block;
+}
+#nav > li:hover > a, #nav .subnav li:hover {
+    color: #000;
+    background-color: #ccc;
+}
+#nav li:hover .subnav{
+    display: block;
+
+}
+#nav .subnav{
+    display: none;
+    min-width: 160px;
+    top: 100%;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+#nav .subnav a{
+    color: #000;
+    padding:0 12px;
+    line-height: 38px;
+
+}
+#nav .nav-arrow-down {
+    font-size: 14px;
+}
+#Header .mobile-menu-btn{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+}
+#Header .mobile-menu-btn,
+#Header .search-btn{
+    float: right;
+    padding: 0 21px;
+    
+
+}
+
+#Header .search-btn:hover{
+    background-color:#f44336 ;
+    cursor: pointer;
+}
+#Header .mobile-menu-btn:hover{
+    background-color: #ccc ;
+    cursor: pointer;
+}
+#Header .mobile-menu-btn:hover .menu-icon{
+    color: #000 ;
+}
+#Header .menu-icon,
+#Header .search-icon{
+    color: #fff;
+    font-size: 20px;
+    line-height: 46px;
+}
+
+
+#slider{
+    position:relative ;
+    margin-top: 46px;
+    padding-top: 50% ;
+    background: url('./font/img/thumb-1920-1110775.png') top center / cover no-repeat;  
+ 
+}
+#slider .text-content{
+    position:absolute ;
+    bottom: 47px;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+
+}
+#slider .text-heading{
+    font-weight:500 ;
+    font-size: 24px;
+}
+#slider .text-description{
+    font-size: 15px;
+    margin-top: 25px;
+    text-shadow: 0 0 1px #000;
+}
+
+
+#content{
+    background:url('./font/img/kda_all_out__background__by_eusoudede_deiw1sm-pre.png');
+    background-repeat:no-repeat;
+    background-size:100% 100%;
+}
+
+#content .content-section{
+    max-width: 100%;
+    width: 1042px;
+    padding: 64px 0 112px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+    
+}
+#content .section-heading{
+    font-size: 30px;
+    font-weight: 500;
+    
+    letter-spacing:4px ;
+    text-align: center;
+
+}
+#content .sub-section-heading{
+    font-size: 15px;
+    text-align: center;
+    margin-top: 25px;
+    font-style: italic;
+    opacity: 0.6;
+}
+#content .about-text {
+    font-size: 15px;
+    margin-top: 25px;
+    text-align: justify;
+    line-height: 1.4;
+}
+#content .member-name{
+    font-size: 20px;
+   
+
+}
+#content .member-list{
+    margin-top: 47px;
+    overflow: hidden;
+    
+    
+}
+
+#content .member-img{
+    margin-top: 15px;
+    width: 154px;
+    border-radius: 4px;
+    -webkit-box-reflect: below 0px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.4));
+    margin-bottom:300px ;
+}
+#content .member-img:hover{
+    cursor: pointer;
+    -webkit-box-reflect:unset;
+    
+}
+#content .member-name:hover .subnav{
+    display: block;
+    cursor: pointer;
+    
+}
+#content .subnav{
+    display:none;
+    font-size: 10px;
+    text-align: left;
+    list-style-type: disc;
+    margin-left: 14px;
+
+}
+
+
+/*tour section*/
+.tour-section {
+    background-color: black;
+}
+.tickets-list {
+    background:url('./font/img/kda_all_out__background__by_eusoudede_deiw1sm-pre.png');
+    background-repeat:no-repeat;
+    
+    margin-top: 40px;
+    list-style: none;
+    text-align: initial;
+    
+
+}
+.tickets-list li {
+    font-size: 15px;
+    padding: 11px 16px;
+    border-bottom: 1px solid #ddd;
+    color: #757575
+}
+.tickets-list .sold-out {
+    background-color: #f44336;
+    color: white;
+    padding: 3px 4px;
+    margin-left: 16px;
+}
+.tickets-list .quantity {
+    float: right;
+    width: 24px;
+    height: 24px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 24px;
+    margin-top: -3px;
+}
+.places-list {
+margin-top:16px ;
+margin-right: -8px;
+ 
+}
+
+.places-img {
+    width: 100%;
+    display: block;
+}
+.places-img:hover{
+    opacity: 0.6 ;
+}
+.places-content{
+    background:url('./font/img/back.jpg');
+    background-repeat:no-repeat;
+    background-size: 100% 100%;
+    padding: 16px;
+    font-size: 15px;
+    text-align: initial;
+    color: #000;
+}
+.places-heading{
+  font-size: 15px;
+  
+
+}
+.places-time{
+    margin-top: 15px;
+    color: #757575;
+}
+.places-desc{
+    margin-top: 15px;
+    line-height: 1.4;
+
+}
+.s-full-width{
+    color: #fff;
+    background-color: black;
+    text-decoration: none;
+    padding: 11px 16px;
+    display: inline-block;
+    margin-top:15px ;
+    border: none;
+    cursor: pointer;
+
+}
+.s-full-width:hover{
+    color: #000;
+    background-color: #ccc;
+
+}
+.modal{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: none;
+    align-items: center;
+    justify-content: center;
+   
+
+}
+.modal-container{
+    background-color: #fff;
+    width: 900px;
+    max-width: calc(100%-32px);
+    min-height: 200px;
+    position: relative;
+    animation: modalFacein ease .4s;
+}
+.modal-header{
+    background-color: #000000;
+    height: 130px;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    font-size: 30px;
+    color: #fff;
+    
+    
+}
+
+.ti-bag{
+    margin-right: 16px;
+}
+.modal-close{
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: #fff;
+    padding: 12px;
+    cursor: pointer;
+    opacity: o.8;
+}
+.modal-close:hover{
+    background-color:#f44336;
+}
+.modal-body{
+    padding: 16px;
+    background:url('./font/img/backg.jpg') ;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    
+}
+.modal-label{
+    display: block;
+    font-size: 15px;
+    margin:12px 0px 12px 20px;
+}
+.modal-input{
+    border: 1px solid #ccc;
+    width: 90%;
+    padding: 10px;
+    font-size: 15px;
+    margin-bottom: 16px;
+    margin-left: 44px;
+}
+button#buy-tickets{
+    background-color: #000;
+    border: none;
+    color: #fff;
+    width: 100%;
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: 18px;
+    cursor: pointer;
+
+}
+button#buy-tickets:hover{
+    opacity: 0.9;
+}
+.modal-footer{
+    padding: 16px;
+    text-align: right;
+    background-color: #000;
+    color: white;
+ 
+}
+.modal-footer a{
+    color: #2196f3;
+}
+.modal.js-modal.open {
+    display: flex;
+    }
+@keyframes modalFacein {
+    from{
+        transform: translateY(-150px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+    /*contact*/
+#contact{
+    margin-bottom: 48px;
+}
+.contact-content{
+    padding:48px 0 ;
+}
+.contact-info{
+    font-size: 18px;
+    line-height: 1.4;
+}
+.contact-info i[class*="ti-"]{
+    width: 60px;
+    
+}
+/*Icon contact*/
+.ti-location-pin:before {
+    content: "\e693";
+    padding-right:8px ;
+}
+.ti-mobile:before {
+    content: "\e693";
+    padding-right:16px ;
+}
+.ti-email:before {
+    content: "\e693";
+    padding-right:16px ;
+}
+.contact-form{
+    font-size: 15px;
+
+}
+.contact-form .form-control{
+    padding: 8px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+.map-section img{
+    width: 100%;
+
+}
+#footer{
+    padding: 64px 16px ;
+    text-align: center;
+    
+}
+#footer .social-list{
+    font-size: 24px;
+}
+#footer .social-list a{
+    color: rgba(0, 0, 0, 0.9);
+    opacity: 0.6;
+    text-decoration: none;
+}
+#footer .social-list a:hover{
+    color: rgba(0, 0, 0, 0.4);
+}
+#footer .copy-right{
+    margin-top: 15px;
+    color: rgba(0, 0, 0, 0.6);
+}
+#footer .copy-right a{
+    color: rgba(0, 0, 0, 0.6);
+}
+.bandmv{
+    margin-top: 150px;
+}
+.bandmv a{
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    margin-left: 10px;
+    
+}
+.bandmv a:hover{
+    color: #f44336;
+}
+.ti-control-play{
+    margin-left: 30px;
+}
+
+.video{
+    text-align: center;
+    margin-top: 20px;
+}
